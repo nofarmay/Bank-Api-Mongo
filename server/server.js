@@ -133,11 +133,11 @@ const reciverAccountId = req.body.reciverid
 const currAccount = accounts.findById(_id)
 const futureReciverAccount = accounts.findById(reciverAccountId) 
 const giverCredit = currAccount.credit
-const reciverAccount = reciverAccount.cash
+const reciverAccount = futureReciverAccount.cash
 const transferReq = req.body.transfer
    {
     if (transferReq<giverCredit){currAccount.credit-=req.body.transfer,
-        futureReciverAccount.cash+=req.body.transfer}
+        reciverAccount.cash+=req.body.transfer}
    else
 throw "cannot transfer,there is not enough cash in the giver account,please load it and try again"
      }
