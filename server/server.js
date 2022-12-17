@@ -131,13 +131,13 @@ app.post('/account/transfer',(req,res) => {
 const _id = req.params.id
 const reciverAccountId = req.body.reciverid
 const currAccount = accounts.findById(_id)
-const reciverAccount = accounts.findById(reciverAccountId) 
+const futureReciverAccount = accounts.findById(reciverAccountId) 
 const giverCredit = currAccount.credit
 const reciverAccount = reciverAccount.cash
 const transferReq = req.body.transfer
    {
     if (transferReq<giverCredit){currAccount.credit-=req.body.transfer,
-        reciverAccount.cash+=req.body.transfer}
+        futureReciverAccount.cash+=req.body.transfer}
    else
 throw "cannot transfer,there is not enough cash in the giver account,please load it and try again"
      }
