@@ -1,12 +1,11 @@
 const express = require('express')
-// const fs = require('fs')
 const app = express()
 const port = process.env.PORT || 5000
 app.use(express.json());
 const uniqid = require('uniqid') ;
-require('./db/mongoose')
-const Users = require('./models/users')
-const Accounts = require('./models/accounts')
+require('./data/mongoose.js')
+const Users = require('./models/users.schema.js')
+const Accounts = require('./models/accounts.schema.js')
 // להוסיף סכמה במודלס
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)

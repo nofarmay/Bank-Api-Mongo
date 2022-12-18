@@ -1,0 +1,66 @@
+.homewrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.subswrapper {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    align-items: center;
+    background-color: 7px 4px rgba(105, 227, 243, 0.732);
+    font-size: 1.5rem;
+}
+
+.slogen {
+    color:  rgb(37, 112, 122, 0.732);
+    font-size: 5.5rem;
+    /* text-shadow: 7px 4px beige; */
+
+}
+
+.des {
+    color: rgba(49, 208, 230, 0.732);
+    font-size: 2rem;
+}
+
+.wrapper {
+    width: 40%;
+    background-color: rgb(217, 221, 221);
+}
+
+.searchBox {
+    display: flex;
+    width: 50%;
+
+}
+
+.searchBox a {
+    text-decoration: none;
+
+}
+
+.searchBox {
+    /* height: 50px; */
+    border: 3px solid #222;
+
+}
+
+.searchBox button {
+    height: 100%;
+    padding: 8px 26px;
+    width: 140px;
+    display: flex;
+    background-color: rgb(210, 208, 198);
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid #222;
+    border-left: 4px solid black;
+}
+.menu-logo{
+    height:20px ;
+  width: 30px;
+}
